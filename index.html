@@ -262,7 +262,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: url('./fondo1.jpg');
+            background-image: url('./reel3.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -274,7 +274,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(253, 246, 240, 0.95) 0%, rgba(249, 241, 243, 0.95) 50%, rgba(254, 249, 245, 0.95) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(253, 246, 240, 0.88) 100%);
             z-index: -1;
         }
         
@@ -288,13 +288,20 @@
             margin: 0 auto;
             padding: 4rem 2rem;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 4rem;
             align-items: center;
+            text-align: center;
         }
         
         .hero-content {
             animation: fadeInLeft 1s ease-out;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero-image {
+            display: none;
         }
         
         @keyframes fadeInLeft {
@@ -321,10 +328,11 @@
         }
         
         .hero h1 {
-            font-size: 4.5rem;
+            font-size: 5.5rem;
             line-height: 1.1;
             color: var(--gris-calido);
             margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
         }
         
         .hero h1 .highlight {
@@ -346,17 +354,22 @@
         }
         
         .hero-description {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             line-height: 1.7;
             color: var(--gris-calido);
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 1;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .hero-features {
             display: flex;
             gap: 2rem;
             margin-bottom: 2.5rem;
+            justify-content: center;
         }
         
         .feature-item {
@@ -379,6 +392,7 @@
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
         
         .btn-primary {
@@ -465,14 +479,14 @@
         }
         
         .price-badge {
-            position: absolute;
+            position: fixed;
             bottom: 30px;
             right: 30px;
             background: white;
-            padding: 0.5rem 0.5rem;
+            padding: 1.5rem 2rem;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            z-index: 2;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            z-index: 100;
             animation: pulse 2s ease-in-out infinite;
         }
         
@@ -584,7 +598,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: url('./fondo2.jpg');
+            background-image: url('./fondo1.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -850,7 +864,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(253, 246, 240, 0.96) 0%, rgba(249, 241, 243, 0.96) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(253, 246, 240, 0.82) 100%);
             z-index: -1;
         }
         
@@ -1090,7 +1104,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background-image: url('./fondo4.jpg');
+            background-image: url('./fondo5.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1102,7 +1116,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(253, 246, 240, 0.95) 0%, rgba(249, 241, 243, 0.95) 100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(253, 246, 240, 0.82) 100%);
             z-index: -1;
         }
         
@@ -1564,7 +1578,7 @@
             <div class="hero-content">
                 <span class="hero-badge"><i class="fas fa-sparkles"></i> ENTREGA ESPECIAL</span>
                 <h1>
-                    Sorprende con<br>
+                    Sorprendé con<br>
                     <span class="highlight">Nuestro Oso</span><br>
                     Mensajero
                 </h1>
